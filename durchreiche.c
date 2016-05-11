@@ -36,7 +36,7 @@ bool Send(char* filename, bool* file, struct Packet* packet)
     unsigned PortNumber = 38;
     for(int i=0; i<38; i++) //Determine Portnumber
     {
-        if(strcmp(filename, comports[i]))
+        if(strcmp(filename, comports[i]) == 0)
         {
             PortNumber = i;
         }
