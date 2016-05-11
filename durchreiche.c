@@ -39,6 +39,7 @@ bool Send(char* filename, bool* file, struct Packet* packet)
         if(strcmp(filename, comports[i]) == 0)
         {
             PortNumber = i;
+            break;
         }
     }
     if(PortNumber == 38) //No
